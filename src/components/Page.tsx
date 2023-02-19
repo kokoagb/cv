@@ -1,12 +1,16 @@
 import styled from "styled-components";
 
-export const Layout = styled.div`
+export const Page = styled.div`
   display: grid;
   grid-template-areas:
     "header header"
     "sidebar main";
   grid-template-columns: 200px 1fr;
   padding: 2rem;
-  background-color: #fff;
-  color: #000;
+
+  @media screen {
+    max-width: 1200px;
+    margin: 5rem auto;
+    box-shadow: 0 0 3rem rgba(0, 0, 0, 0.3);
+  }
 `;
